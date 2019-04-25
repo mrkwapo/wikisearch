@@ -1,6 +1,6 @@
 /* global fetch */
 
-const response = ["apple", "banana", "orange"];
+// const response = ["apple", "banana", "orange"];
 
 
 
@@ -23,17 +23,18 @@ function makeAPIcall(){
   }).then(function(response){
     console.log(response);
     displayResults(response[1], response[2], response[3]);
+    console.log(response[2]);
   });
 }
 
 // This function displays results(a array) on the page as a list
 function displayResults(titles, description, links){
   console.log(links);
-  console.log(description)
+//   console.log(description)
   const newResponse = titles.map(function(item, index){
     console.log(item);
     
-    return "<li>" + "<a href="+ links[index] +">"+ item + "</a>" + "</li>" + description;
+    return "<li>" + "<a href="+ links[index] +">"+ item + "</a>" + "</li>" + description[index];
   });
   const joinedResponse = newResponse.join("\n");
   console.log(joinedResponse);
