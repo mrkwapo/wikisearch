@@ -1,12 +1,28 @@
-#main-container{
-  text-align: center;
-  margin: auto;
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
 }
 
-ul{
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Mono", monospace;
+}
 
-    
+#main-container {
+    text-align: center;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+ul li h4{
+    font-family: "Roboto Mono", monospace;
+    margin: 10px;
+}
+
+ul li p {
+    font-weight: 100;
 }
